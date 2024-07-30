@@ -1,16 +1,14 @@
 from turtle import Turtle
 
-STARTING_POSITIONS = [(350, 0), (-350, 0)]
-
 class Player(Turtle):
 
-    def __init__(self):
+    def __init__(self, position):
         super().__init__()
         self.shape("square")
         self.shapesize(stretch_wid=5, stretch_len=1)
         self.color("white")
         self.penup()
-        self.goto(STARTING_POSITIONS[0])
+        self.goto(position)
 
     def move_up(self):
         self.goto(self.xcor(), self.ycor() + 20)
