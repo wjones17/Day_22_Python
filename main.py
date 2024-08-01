@@ -75,18 +75,16 @@ def game_loop():
         time.sleep(0.05)
         play_game()
         screen.update()
-        if scoreboard.left_player_points == 2:
+        if scoreboard.left_player_points == 21:
             ball_is_moving = False
             game_is_on = False
             scoreboard.game_over("left")
-        elif scoreboard.right_player_points == 2:
+        elif scoreboard.right_player_points == 21:
             ball_is_moving = False
             game_is_on = False
             scoreboard.game_over("right")
 
 game_loop()
     
-
-
 
 screen.exitonclick()
