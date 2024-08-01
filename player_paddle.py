@@ -14,12 +14,10 @@ class Player(Turtle):
         if(self.ycor() >= 240):
             pass
         else:
-            print(self.ycor())
             self.goto(self.xcor(), self.ycor() + 20)
         
     def move_down(self):
         if(self.ycor() <= -240):
             pass
         else:
-            print(self.ycor())
             self.goto(self.xcor(), self.ycor() - 20)
